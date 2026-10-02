@@ -9,7 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Plus Jakarta Sans', sans-serif; }
-        .blend-bg-white {
+        /* Teknik blend mode agar background putih pada gambar PNG menyatu transparan */
+        .blend-multiply {
             mix-blend-mode: multiply;
         }
     </style>
@@ -43,16 +44,16 @@
     <!-- Hero Section -->
     <section class="relative w-full pt-8 pb-16 bg-[#F4F1EA]">
         
-        <!-- Top Area: Menggunakan file PNG untuk Logo Teks & Logo Bulan -->
+        <!-- Top Area: Logo Teks & Logo Bulan yang Diperbesar -->
         <div class="max-w-7xl mx-auto px-8 flex justify-between items-center mb-6">
-            <!-- Logo Teks (logo-teks.png) -->
+            <!-- Logo Teks (Diperbesar) -->
             <div class="flex flex-col items-start -ml-4">
-                <img src="logo-teks.png" alt="Logo Lunáe" class="h-28 md:h-36 w-auto object-contain blend-bg-white">
+                <img src="logo-teks.png" alt="Logo Lunáe" class="h-40 md:h-56 w-auto object-contain blend-multiply">
             </div>
 
-            <!-- Logo Bulan (logo-bulan.png) -->
-            <div class="w-32 h-32 md:w-40 md:h-40 flex items-center justify-center">
-                <img src="logo-bulan.png" alt="Logo Bulan" class="w-full h-full object-contain blend-bg-white">
+            <!-- Logo Bulan (Diperbesar) -->
+            <div class="w-44 h-44 md:w-60 md:h-60 flex items-center justify-center">
+                <img src="logo-bulan.png" alt="Logo Bulan" class="w-full h-full object-contain blend-multiply">
             </div>
         </div>
 
@@ -76,9 +77,9 @@
                 </div>
             </div>
 
-            <!-- Tengah: Foto Model (Menembus Batas Atas & Bawah Banner Hitam) -->
+            <!-- Tengah: Foto Model (Tanpa Kotak Putih dengan blend-multiply) -->
             <div class="absolute inset-x-0 bottom-0 top-0 flex justify-center items-center pointer-events-none z-10">
-                <img src="model lunae.png" alt="Lunáe Model" class="h-[580px] md:h-[660px] object-contain pointer-events-auto blend-bg-white transform translate-y-[-30px]">
+                <img src="model lunae.png" alt="Lunáe Model" class="h-[600px] md:h-[680px] object-contain pointer-events-auto blend-multiply transform translate-y-[-20px]">
             </div>
 
             <!-- Kanan: Floating Card (Signature Trio Set) -->
