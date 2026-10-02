@@ -10,11 +10,6 @@
     <style>
         body { font-family: 'Plus Jakarta Sans', sans-serif; }
         
-        /* Teknik Penyelarasan Background untuk menghilangkan kotak putih */
-        .bg-color-match {
-            background-color: #F4F1EA;
-        }
-
         /* Efek Cursor Ketik */
         .typing-cursor::after {
             content: '|';
@@ -29,90 +24,86 @@
 </head>
 <body class="bg-[#F4F1EA] text-[#1A1A1A] antialiased overflow-x-hidden">
 
-    <!-- Top Navigation Bar -->
-    <header class="w-full border-b border-gray-300 py-3 px-4 md:px-8 flex justify-between items-center text-xs tracking-wide bg-[#F4F1EA]">
-        <!-- Left Menu (Hidden on mobile, visible on md+) -->
-        <nav class="hidden md:flex space-x-6 items-center">
-            <a href="#" class="text-gray-600 hover:text-black transition">Shop</a>
-            <a href="#" class="font-semibold text-black hover:opacity-70 transition">New In</a>
-            <a href="#" class="text-gray-600 hover:text-gray-900 transition">Collections</a>
-            <a href="#" class="text-gray-600 hover:text-black transition">About</a>
-            <a href="#" class="text-gray-600 hover:text-black transition">Contact</a>
+    <!-- Top Announcement / Perks Bar -->
+    <div class="bg-white border-b border-gray-200 py-2.5 px-4 text-[11px] text-gray-600 hidden md:block">
+        <div class="max-w-7xl mx-auto flex justify-between items-center tracking-wide">
+            <div class="flex items-center space-x-2">
+                <span class="font-semibold text-black">Free Shipping</span>
+                <span>Gratis ongkir hingga IDR 10.000 tanpa minimum transaksi</span>
+            </div>
+            <div class="flex items-center space-x-2">
+                <span class="font-semibold text-black">Easy Returns</span>
+                <span>Gratis pengembalian barang maksimal 7 hari setelah diterima</span>
+            </div>
+            <div class="flex items-center space-x-2">
+                <span class="font-semibold text-black">Click & Collect</span>
+                <span>Belanja online, ambil di store pilihan tanpa minimum transaksi</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <header class="w-full bg-white border-b border-gray-200 py-4 px-6 md:px-12 flex justify-between items-center sticky top-0 z-50">
+        <!-- Left Menu -->
+        <nav class="hidden md:flex space-x-8 items-center text-xs tracking-widest font-medium">
+            <a href="#" class="text-black hover:opacity-70 transition">NEW ARRIVALS</a>
+            <a href="#" class="text-gray-600 hover:text-black transition flex items-center gap-1">CLOTHING <span>▾</span></a>
+            <a href="#" class="text-gray-600 hover:text-black transition flex items-center gap-1">ACCESSORIES <span>▾</span></a>
         </nav>
         
         <!-- Mobile Menu Button -->
-        <button class="md:hidden text-gray-800 text-sm font-medium">Menu</button>
+        <button class="md:hidden text-gray-800 text-xs font-semibold tracking-wider">MENU</button>
         
         <!-- Brand Logo Center -->
-        <div class="font-serif tracking-widest font-bold text-xs md:text-sm">
-            lun.aeofficial
+        <div class="font-serif tracking-[0.25em] font-bold text-sm md:text-base">
+            LUNÁE
         </div>
 
         <!-- Right Menu -->
-        <div class="flex space-x-4 md:space-x-6 items-center">
-            <a href="#" class="hidden sm:inline text-gray-600 hover:text-black transition">🔍</a>
-            <a href="#" class="hidden sm:inline text-gray-600 hover:text-black transition">👤</a>
-            <a href="#" class="text-gray-600 hover:text-black transition flex items-center gap-1">🛒 <span class="hidden sm:inline">11item</span></a>
+        <div class="flex space-x-6 items-center text-xs">
+            <a href="#" class="hidden sm:inline text-gray-700 hover:text-black transition">Masuk Akun</a>
+            <a href="#" class="text-gray-700 hover:text-black transition">♡ 0</a>
+            <a href="#" class="text-gray-700 hover:text-black transition flex items-center gap-1">🛍️ 0</a>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="relative w-full pt-6 pb-12 md:pt-8 md:pb-16 bg-[#F4F1EA]">
-        
-        <!-- Top Area: Logo Teks & Logo Bulan -->
-        <div class="max-w-7xl mx-auto px-4 md:px-8 flex justify-between items-center mb-4 md:mb-6">
-            <!-- Logo Teks -->
-            <div class="flex flex-col items-start">
-                <img src="logo-teks.png" alt="Logo Lunáe" class="h-24 sm:h-32 md:h-56 w-auto object-contain bg-color-match">
-            </div>
-
-            <!-- Logo Bulan -->
-            <div class="w-28 h-28 sm:w-36 sm:h-36 md:w-60 md:h-60 flex items-center justify-center">
-                <img src="logo-bulan.png" alt="Logo Bulan" class="w-full h-full object-contain bg-color-match">
-            </div>
+    <!-- Sub Navigation / Secondary Header -->
+    <div class="bg-white border-b border-gray-200 py-3 px-6 md:px-12 flex justify-between items-center text-xs">
+        <div class="font-serif tracking-widest font-semibold">
+            lun.aeofficial <span class="font-sans font-normal text-gray-500 text-[10px] ml-2">Modular Wear</span>
         </div>
+        <div class="relative w-48 md:w-64">
+            <input type="text" placeholder="Cari produk..." class="w-full border-b border-gray-400 py-1 text-xs focus:outline-none focus:border-black bg-transparent">
+            <span class="absolute right-0 top-1 text-gray-500">🔍</span>
+        </div>
+    </div>
 
-        <!-- Middle Banner: Pita Hitam Melintang -->
-        <div class="relative w-full bg-[#1A1A1A] text-white py-12 px-6 md:py-16 md:px-16 flex flex-col md:flex-row items-center justify-between min-h-[480px] my-4 shadow-xl gap-8 md:gap-0">
+    <!-- Hero Section Banner (Style like reference) -->
+    <section class="relative w-full bg-[#3D2E24] text-[#F4F1EA] py-12 px-6 md:py-20 md:px-16 overflow-hidden">
+        
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between relative z-10">
             
-            <!-- Kiri: Teks Slogan dengan Efek Typing -->
-            <div class="z-20 max-w-md md:max-w-sm space-y-4 text-left w-full md:w-1/3">
-                <h2 id="typing-heading" class="text-2xl sm:text-3xl md:text-4xl font-serif leading-tight min-h-[72px] sm:min-h-[84px] md:min-h-[96px] typing-cursor"></h2>
-                <p class="text-xs text-gray-300 leading-relaxed">
-                    One wardrobe. Endless possibilities.<br>
-                    Designed to transform with you.
+            <!-- Kiri: Teks Slogan / Promo dengan Efek Typing -->
+            <div class="w-full md:w-1/2 space-y-6 text-left mb-10 md:mb-0">
+                <div class="inline-block border border-[#F4F1EA]/40 px-3 py-1 text-[10px] tracking-widest uppercase rounded-full">
+                    Special Offer
+                </div>
+                <h1 id="typing-heading" class="text-4xl sm:text-5xl md:text-6xl font-serif leading-[1.1] min-h-[120px] md:min-h-[140px] typing-cursor"></h1>
+                <p class="text-xs md:text-sm text-gray-300 tracking-wide leading-relaxed max-w-md">
+                    One wardrobe. Endless possibilities. Designed to transform seamlessly with your daily style and confidence.
                 </p>
-                <div class="pt-2">
-                    <p class="text-xs font-semibold mb-2">Shop Now</p>
-                    <a href="#products" class="inline-block border border-white/60 px-6 py-2.5 rounded-full text-xs tracking-widest uppercase hover:bg-white hover:text-black transition">
-                        Shop LUNAE
+                <div class="pt-4">
+                    <a href="#products" class="inline-block bg-[#F4F1EA] text-[#3D2E24] px-8 py-3 rounded-full text-xs font-semibold tracking-widest uppercase hover:bg-white hover:scale-105 transition duration-300 shadow-lg">
+                        Shop Collection
                     </a>
                 </div>
             </div>
 
-            <!-- Tengah: Foto Model dengan Background Warna yang Diselaraskan (#F4F1EA) -->
-            <div class="w-full md:absolute md:inset-x-0 md:bottom-0 md:top-0 flex justify-center items-center pointer-events-none z-10 my-4 md:my-0">
-                <div class="bg-color-match p-2 md:p-0 flex justify-center items-center rounded-lg overflow-hidden">
-                    <img src="model lunae.png" alt="Lunáe Model" class="h-[400px] sm:h-[480px] md:h-[650px] object-contain pointer-events-auto bg-color-match transform md:translate-y-[-10px]">
-                </div>
-            </div>
-
-            <!-- Kanan: Floating Card (Signature Trio Set) -->
-            <div class="z-20 bg-[#F4F1EA] text-[#1A1A1A] p-4 rounded-2xl shadow-2xl w-full sm:w-80 border border-gray-300 md:ml-auto">
-                <div class="bg-white p-3 rounded-xl mb-3 shadow-inner">
-                    <div class="grid grid-cols-2 gap-2 mb-2">
-                        <div class="bg-gray-100 aspect-[4/3] rounded overflow-hidden flex items-center justify-center">
-                            <img src="model lunae.png" alt="Detail 1" class="w-full h-full object-cover">
-                        </div>
-                        <div class="bg-gray-100 aspect-[4/3] rounded overflow-hidden flex items-center justify-center">
-                            <img src="model lunae.png" alt="Detail 2" class="w-full h-full object-cover">
-                        </div>
-                    </div>
-                </div>
-                <h3 class="text-xs font-bold">Signature Trio Set</h3>
-                <p class="text-[10px] text-gray-500 mb-3">Three Essential Tones</p>
-                <div class="bg-black text-white text-center py-2.5 rounded-full text-xs font-mono tracking-wider font-medium">
-                    Rp. 999.999
+            <!-- Kanan: Foto Model Clean Banner -->
+            <div class="w-full md:w-1/2 flex justify-center md:justify-end items-end relative">
+                <div class="relative max-w-md w-full flex justify-center items-end">
+                    <!-- Foto Model Menyatu Rapi di Banner Cokelat Hangat -->
+                    <img src="model lunae.png" alt="Lunáe Model" class="h-[400px] sm:h-[480px] md:h-[540px] object-contain drop-shadow-2xl">
                 </div>
             </div>
 
@@ -120,21 +111,24 @@
     </section>
 
     <!-- Main Content Container / Product Grid -->
-    <main id="products" class="max-w-7xl mx-auto px-4 md:px-8 pt-12 pb-20">
+    <main id="products" class="max-w-7xl mx-auto px-6 md:px-12 pt-16 pb-24">
         
         <!-- Section Title -->
-        <div class="mb-8 border-t border-gray-300 pt-8">
-            <h2 class="text-lg md:text-xl font-serif font-bold tracking-wide">Koleksi Pilihan</h2>
-            <p class="text-xs text-gray-600 mt-1">Eksplorasi gaya modular terbaik untuk penampilan harian Anda.</p>
+        <div class="mb-10 flex justify-between items-end border-b border-gray-300 pb-4">
+            <div>
+                <h2 class="text-lg md:text-xl font-serif font-bold tracking-wide text-black">Koleksi Pilihan</h2>
+                <p class="text-xs text-gray-600 mt-1">Eksplorasi gaya modular terbaik untuk penampilan harian Anda.</p>
+            </div>
+            <a href="#" class="text-xs font-semibold underline tracking-wider text-black hover:opacity-70">Lihat Semua</a>
         </div>
 
-        <!-- Product Grid (1 col on mobile, 2 on tablet, 4 on desktop) -->
+        <!-- Product Grid (4 Columns) -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             
             <!-- Product 1 -->
             <div class="group bg-white p-4 rounded-xl shadow-sm border border-gray-200">
-                <div class="bg-[#E5E5E5] aspect-[3/4] mb-3 overflow-hidden flex items-center justify-center relative rounded-lg">
-                    <span class="text-xs text-gray-500 font-medium">UrbanHood Image</span>
+                <div class="bg-gray-100 aspect-[3/4] mb-3 overflow-hidden flex items-center justify-center relative rounded-lg">
+                    <span class="text-xs text-gray-500 font-medium">UrbanHood</span>
                 </div>
                 <div class="flex justify-between items-start">
                     <div>
@@ -147,8 +141,8 @@
 
             <!-- Product 2 -->
             <div class="group bg-white p-4 rounded-xl shadow-sm border border-gray-200">
-                <div class="bg-[#E5E5E5] aspect-[3/4] mb-3 overflow-hidden flex items-center justify-center relative rounded-lg">
-                    <span class="text-xs text-gray-500 font-medium">StreetStylez Image</span>
+                <div class="bg-gray-100 aspect-[3/4] mb-3 overflow-hidden flex items-center justify-center relative rounded-lg">
+                    <span class="text-xs text-gray-500 font-medium">StreetStylez</span>
                 </div>
                 <div class="flex justify-between items-start">
                     <div>
@@ -161,8 +155,8 @@
 
             <!-- Product 3 -->
             <div class="group bg-white p-4 rounded-xl shadow-sm border border-gray-200">
-                <div class="bg-[#E5E5E5] aspect-[3/4] mb-3 overflow-hidden flex items-center justify-center relative rounded-lg">
-                    <span class="text-xs text-gray-500 font-medium">ChillWave Image</span>
+                <div class="bg-gray-100 aspect-[3/4] mb-3 overflow-hidden flex items-center justify-center relative rounded-lg">
+                    <span class="text-xs text-gray-500 font-medium">ChillWave</span>
                 </div>
                 <div class="flex justify-between items-start">
                     <div>
@@ -175,8 +169,8 @@
 
             <!-- Product 4 -->
             <div class="group bg-white p-4 rounded-xl shadow-sm border border-gray-200">
-                <div class="bg-[#E5E5E5] aspect-[3/4] mb-3 overflow-hidden flex items-center justify-center relative rounded-lg">
-                    <span class="text-xs text-gray-500 font-medium">HoodedHaven Image</span>
+                <div class="bg-gray-100 aspect-[3/4] mb-3 overflow-hidden flex items-center justify-center relative rounded-lg">
+                    <span class="text-xs text-gray-500 font-medium">HoodedHaven</span>
                 </div>
                 <div class="flex justify-between items-start">
                     <div>
@@ -187,14 +181,6 @@
                 </div>
             </div>
 
-        </div>
-
-        <!-- Pagination Dots -->
-        <div class="flex justify-center space-x-2 mt-12">
-            <span class="w-2 h-2 rounded-full bg-gray-700"></span>
-            <span class="w-2 h-2 rounded-full bg-gray-300"></span>
-            <span class="w-2 h-2 rounded-full bg-gray-300"></span>
-            <span class="w-2 h-2 rounded-full bg-gray-300"></span>
         </div>
 
     </main>
