@@ -11,43 +11,112 @@
         body { font-family: 'Plus Jakarta Sans', sans-serif; }
     </style>
 </head>
-<body class="bg-white text-[#1A1A1A] antialiased">
+<body class="bg-[#F4F1EA] text-[#1A1A1A] antialiased">
 
     <!-- Top Navigation Bar -->
-    <header class="w-full border-b border-gray-200 py-4 px-8 flex justify-between items-center text-xs tracking-wide">
+    <header class="w-full border-b border-gray-300 py-4 px-8 flex justify-between items-center text-xs tracking-wide">
         <!-- Left Menu -->
         <nav class="flex space-x-6 items-center">
-            <a href="#" class="font-semibold text-black hover:opacity-70 transition">New Collection</a>
-            <a href="#" class="text-gray-600 hover:text-black transition">Atasan</a>
-            <a href="#" class="text-gray-600 hover:text-black transition">Bawahan</a>
-            <a href="#" class="text-gray-600 hover:text-black transition">Aksesoris</a>
-            <a href="#" class="text-gray-600 hover:text-black transition">Set fashion</a>
+            <a href="#" class="text-gray-600 hover:text-black transition">Shop</a>
+            <a href="#" class="font-semibold text-black hover:opacity-70 transition">New In</a>
+            <a href="#" class="text-gray-600 hover:text-black transition">Collections</a>
+            <a href="#" class="text-gray-600 hover:text-black transition">About</a>
+            <a href="#" class="text-gray-600 hover:text-black transition">Contact</a>
         </nav>
         
+        <!-- Brand Logo Center -->
+        <div class="font-serif tracking-widest font-bold text-sm">
+            lun.aeofficial
+        </div>
+
         <!-- Right Menu -->
         <div class="flex space-x-6 items-center">
-            <a href="#" class="text-gray-600 hover:text-black transition">Pencarian</a>
-            <a href="#" class="text-gray-600 hover:text-black transition">Akun Saya</a>
-            <a href="#" class="text-red-600 font-medium hover:opacity-70 transition">Shopping</a>
+            <a href="#" class="text-gray-600 hover:text-black transition">🔍</a>
+            <a href="#" class="text-gray-600 hover:text-black transition">👤</a>
+            <a href="#" class="text-gray-600 hover:text-black transition flex items-center gap-1">🛒 11item</a>
         </div>
     </header>
 
-    <!-- Main Content Container -->
-    <main class="max-w-7xl mx-auto px-8 pt-12 pb-20">
+    <!-- Hero Section (Banner Baru) -->
+    <section class="max-w-7xl mx-auto px-8 pt-12 pb-8 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <!-- Left Hero Content -->
+        <div class="lg:col-span-7 space-y-6">
+            <div>
+                <h1 class="text-4xl md:text-6xl font-serif tracking-wider font-bold leading-tight">
+                    LUNAE <br>OFFICIAL
+                </h1>
+            </div>
+            
+            <div class="bg-[#EAE4DC] p-8 rounded-2xl relative overflow-hidden border border-gray-300/60 shadow-sm">
+                <h2 class="text-2xl md:text-3xl font-serif font-medium text-gray-900 mb-2">
+                    Where Comfort <br>Meets Confidence
+                </h2>
+                <p class="text-xs text-gray-700 leading-relaxed">
+                    One wardrobe. Endless possibilities.<br>
+                    Designed to transform with you.
+                </p>
+                <div class="mt-6">
+                    <a href="#products" class="inline-block bg-black text-white px-6 py-3 rounded-full text-xs tracking-wider uppercase hover:bg-gray-800 transition">
+                        ↓ Shop Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Loved by Badge -->
+            <div class="flex items-center gap-3 pt-2">
+                <div class="flex -space-x-2">
+                    <div class="w-8 h-8 rounded-full bg-gray-400 border-2 border-white flex items-center justify-center text-[10px] text-white">👤</div>
+                    <div class="w-8 h-8 rounded-full bg-gray-500 border-2 border-white flex items-center justify-center text-[10px] text-white">👤</div>
+                    <div class="w-8 h-8 rounded-full bg-gray-600 border-2 border-white flex items-center justify-center text-[10px] text-white">👤</div>
+                </div>
+                <div class="text-xs text-gray-800 font-medium">
+                    Loved by 20K+ <br><span class="text-gray-500 text-[10px]">TrendSetters ♥</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Hero Banner (Featured Look) -->
+        <div class="lg:col-span-5 bg-[#EAE4DC] p-6 rounded-2xl border border-gray-300/60 shadow-sm relative">
+            <div class="flex justify-between items-center mb-4">
+                <span class="text-xs font-semibold tracking-widest uppercase text-gray-700">Featured Look</span>
+                <div class="flex gap-4 text-[10px] text-gray-600">
+                    <span>✨ Premium Quality</span>
+                    <span>🌿 Sustainable Fashion</span>
+                    <span>💎 Limited Edition</span>
+                </div>
+            </div>
+
+            <!-- Image/Product Card inside Banner dengan hero-model.jpg -->
+            <div class="bg-white p-4 rounded-xl shadow-inner mb-4">
+                <div class="bg-[#E5E5E5] aspect-[4/3] rounded-lg mb-3 overflow-hidden flex items-center justify-center relative">
+                    <img src="hero-model.jpg" alt="Hero Model" class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-xs font-bold text-gray-900">Signature Trio Set</h3>
+                <p class="text-[10px] text-gray-500">Three Essential Tones</p>
+            </div>
+
+            <div class="flex justify-between items-center">
+                <span class="text-xs font-bold tracking-wide">Own Your WORLD ✦</span>
+                <span class="bg-black text-white text-xs px-4 py-2 rounded-full font-mono">Rp79.99</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Container / Product Grid -->
+    <main id="products" class="max-w-7xl mx-auto px-8 pt-8 pb-20">
         
-        <!-- Brand Title & Tagline -->
-        <div class="mb-12">
-            <h1 class="text-3xl md:text-4xl font-serif tracking-widest font-bold mb-2">LUNAE</h1>
-            <p class="text-sm text-gray-700">One wardrobe. Endless possibilities.</p>
-            <p class="text-sm text-gray-700">Designed to transform with you.</p>
+        <!-- Section Title -->
+        <div class="mb-8 border-t border-gray-300 pt-8">
+            <h2 class="text-xl font-serif font-bold tracking-wide">Koleksi Pilihan</h2>
+            <p class="text-xs text-gray-600 mt-1">Eksplorasi gaya modular terbaik untuk penampilan harian Anda.</p>
         </div>
 
         <!-- Product Grid (4 Columns) -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             
             <!-- Product 1 -->
-            <div class="group">
-                <div class="bg-[#E5E5E5] aspect-[3/4] mb-3 overflow-hidden flex items-center justify-center relative">
+            <div class="group bg-white p-4 rounded-xl shadow-sm border border-gray-200">
+                <div class="bg-[#E5E5E5] aspect-[3/4] mb-3 overflow-hidden flex items-center justify-center relative rounded-lg">
                     <span class="text-xs text-gray-500 font-medium">UrbanHood Image</span>
                 </div>
                 <div class="flex justify-between items-start">
@@ -55,13 +124,13 @@
                         <h3 class="text-xs font-medium text-gray-900">UrbanHood</h3>
                         <p class="text-xs text-gray-700 mt-0.5">Rp. 1.500.000</p>
                     </div>
-                    <button class="border border-black px-2.5 py-1 text-xs font-mono hover:bg-black hover:text-white transition">+</button>
+                    <button class="border border-black px-2.5 py-1 text-xs font-mono hover:bg-black hover:text-white transition rounded">+</button>
                 </div>
             </div>
 
             <!-- Product 2 -->
-            <div class="group">
-                <div class="bg-[#E5E5E5] aspect-[3/4] mb-3 overflow-hidden flex items-center justify-center relative">
+            <div class="group bg-white p-4 rounded-xl shadow-sm border border-gray-200">
+                <div class="bg-[#E5E5E5] aspect-[3/4] mb-3 overflow-hidden flex items-center justify-center relative rounded-lg">
                     <span class="text-xs text-gray-500 font-medium">StreetStylez Image</span>
                 </div>
                 <div class="flex justify-between items-start">
@@ -69,13 +138,13 @@
                         <h3 class="text-xs font-medium text-gray-900">StreetStylez</h3>
                         <p class="text-xs text-gray-700 mt-0.5">Rp. 1.500.000</p>
                     </div>
-                    <button class="border border-black px-2.5 py-1 text-xs font-mono hover:bg-black hover:text-white transition">+</button>
+                    <button class="border border-black px-2.5 py-1 text-xs font-mono hover:bg-black hover:text-white transition rounded">+</button>
                 </div>
             </div>
 
             <!-- Product 3 -->
-            <div class="group">
-                <div class="bg-[#E5E5E5] aspect-[3/4] mb-3 overflow-hidden flex items-center justify-center relative">
+            <div class="group bg-white p-4 rounded-xl shadow-sm border border-gray-200">
+                <div class="bg-[#E5E5E5] aspect-[3/4] mb-3 overflow-hidden flex items-center justify-center relative rounded-lg">
                     <span class="text-xs text-gray-500 font-medium">ChillWave Image</span>
                 </div>
                 <div class="flex justify-between items-start">
@@ -83,13 +152,13 @@
                         <h3 class="text-xs font-medium text-gray-900">ChillWave</h3>
                         <p class="text-xs text-gray-700 mt-0.5">Rp. 1.500.000</p>
                     </div>
-                    <button class="border border-black px-2.5 py-1 text-xs font-mono hover:bg-black hover:text-white transition">+</button>
+                    <button class="border border-black px-2.5 py-1 text-xs font-mono hover:bg-black hover:text-white transition rounded">+</button>
                 </div>
             </div>
 
             <!-- Product 4 -->
-            <div class="group">
-                <div class="bg-[#E5E5E5] aspect-[3/4] mb-3 overflow-hidden flex items-center justify-center relative">
+            <div class="group bg-white p-4 rounded-xl shadow-sm border border-gray-200">
+                <div class="bg-[#E5E5E5] aspect-[3/4] mb-3 overflow-hidden flex items-center justify-center relative rounded-lg">
                     <span class="text-xs text-gray-500 font-medium">HoodedHaven Image</span>
                 </div>
                 <div class="flex justify-between items-start">
@@ -97,7 +166,7 @@
                         <h3 class="text-xs font-medium text-gray-900">HoodedHaven</h3>
                         <p class="text-xs text-gray-700 mt-0.5">Rp. 1.500.000</p>
                     </div>
-                    <button class="border border-black px-2.5 py-1 text-xs font-mono hover:bg-black hover:text-white transition">+</button>
+                    <button class="border border-black px-2.5 py-1 text-xs font-mono hover:bg-black hover:text-white transition rounded">+</button>
                 </div>
             </div>
 
