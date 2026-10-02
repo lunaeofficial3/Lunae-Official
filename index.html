@@ -46,7 +46,7 @@
     <header class="w-full bg-white border-b border-gray-200 py-4 px-6 md:px-12 flex justify-between items-center sticky top-0 z-50">
         <!-- Left Menu -->
         <nav class="hidden md:flex space-x-8 items-center text-xs tracking-widest font-medium">
-            <a href="#" class="text-black hover:opacity-70 transition">NEW ARRIVALS</a>
+            <a href="#" class="text-black font-bold hover:opacity-70 transition">NEW ARRIVALS</a>
             <a href="#" class="text-gray-600 hover:text-black transition flex items-center gap-1">CLOTHING <span>▾</span></a>
             <a href="#" class="text-gray-600 hover:text-black transition flex items-center gap-1">ACCESSORIES <span>▾</span></a>
         </nav>
@@ -78,106 +78,110 @@
         </div>
     </div>
 
-    <!-- Hero Section Banner (Style like reference) -->
+    <!-- Hero Section Banner -->
     <section class="relative w-full bg-[#3D2E24] text-[#F4F1EA] py-12 px-6 md:py-20 md:px-16 overflow-hidden">
-        
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between relative z-10">
-            
-            <!-- Kiri: Teks Slogan / Promo dengan Efek Typing -->
             <div class="w-full md:w-1/2 space-y-6 text-left mb-10 md:mb-0">
                 <div class="inline-block border border-[#F4F1EA]/40 px-3 py-1 text-[10px] tracking-widest uppercase rounded-full">
-                    Special Offer
+                    Special Collection
                 </div>
                 <h1 id="typing-heading" class="text-4xl sm:text-5xl md:text-6xl font-serif leading-[1.1] min-h-[120px] md:min-h-[140px] typing-cursor"></h1>
                 <p class="text-xs md:text-sm text-gray-300 tracking-wide leading-relaxed max-w-md">
                     One wardrobe. Endless possibilities. Designed to transform seamlessly with your daily style and confidence.
                 </p>
                 <div class="pt-4">
-                    <a href="#products" class="inline-block bg-[#F4F1EA] text-[#3D2E24] px-8 py-3 rounded-full text-xs font-semibold tracking-widest uppercase hover:bg-white hover:scale-105 transition duration-300 shadow-lg">
-                        Shop Collection
+                    <a href="#new-arrival" class="inline-block bg-[#F4F1EA] text-[#3D2E24] px-8 py-3 rounded-full text-xs font-semibold tracking-widest uppercase hover:bg-white hover:scale-105 transition duration-300 shadow-lg">
+                        Explore LUNA
                     </a>
                 </div>
             </div>
-
-            <!-- Kanan: Foto Model Clean Banner -->
             <div class="w-full md:w-1/2 flex justify-center md:justify-end items-end relative">
                 <div class="relative max-w-md w-full flex justify-center items-end">
-                    <!-- Foto Model Menyatu Rapi di Banner Cokelat Hangat -->
                     <img src="model lunae.png" alt="Lunáe Model" class="h-[400px] sm:h-[480px] md:h-[540px] object-contain drop-shadow-2xl">
                 </div>
             </div>
-
         </div>
     </section>
 
-    <!-- Main Content Container / Product Grid -->
-    <main id="products" class="max-w-7xl mx-auto px-6 md:px-12 pt-16 pb-24">
+    <!-- Main Content Container / New Arrival Grid Style -->
+    <main id="new-arrival" class="max-w-7xl mx-auto px-6 md:px-12 pt-16 pb-24">
         
-        <!-- Section Title -->
-        <div class="mb-10 flex justify-between items-end border-b border-gray-300 pb-4">
+        <!-- Section Title (Style like reference header with arrows) -->
+        <div class="mb-10 flex justify-between items-center border-b border-gray-300 pb-4">
             <div>
-                <h2 class="text-lg md:text-xl font-serif font-bold tracking-wide text-black">Koleksi Pilihan</h2>
-                <p class="text-xs text-gray-600 mt-1">Eksplorasi gaya modular terbaik untuk penampilan harian Anda.</p>
+                <h2 class="text-lg md:text-xl font-serif font-bold tracking-wide text-black">Lunáe X LUNA New Arrival</h2>
+                <p class="text-xs text-gray-600 mt-1">Koleksi kemeja modular eksklusif dalam varian warna earth-tone terbaik.</p>
             </div>
-            <a href="#" class="text-xs font-semibold underline tracking-wider text-black hover:opacity-70">Lihat Semua</a>
+            <div class="flex space-x-2 text-sm">
+                <button class="w-8 h-8 rounded-full border border-gray-400 flex items-center justify-center hover:bg-black hover:text-white transition">←</button>
+                <button class="w-8 h-8 rounded-full border border-gray-400 flex items-center justify-center hover:bg-black hover:text-white transition">→</button>
+            </div>
         </div>
 
-        <!-- Product Grid (4 Columns) -->
+        <!-- Product Grid (4 Columns matching style from image 1) -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             
-            <!-- Product 1 -->
-            <div class="group bg-white p-4 rounded-xl shadow-sm border border-gray-200">
-                <div class="bg-gray-100 aspect-[3/4] mb-3 overflow-hidden flex items-center justify-center relative rounded-lg">
-                    <span class="text-xs text-gray-500 font-medium">UrbanHood</span>
-                </div>
-                <div class="flex justify-between items-start">
-                    <div>
-                        <h3 class="text-xs font-medium text-gray-900">UrbanHood</h3>
-                        <p class="text-xs text-gray-700 mt-0.5">Rp. 1.500.000</p>
+            <!-- Item 1: LUNA Ivory -->
+            <div class="group bg-white p-4 rounded-xl shadow-sm border border-gray-200 flex flex-col justify-between">
+                <div>
+                    <div class="bg-[#F4F1EA] aspect-[3/4] mb-3 overflow-hidden flex items-center justify-center relative rounded-lg">
+                        <img src="model lunae.png" alt="LUNA Ivory" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-2 left-2 bg-black text-white text-[9px] uppercase px-2 py-0.5 rounded tracking-wider">Special Offer</span>
                     </div>
-                    <button class="border border-black px-2.5 py-1 text-xs font-mono hover:bg-black hover:text-white transition rounded">+</button>
+                    <h3 class="text-xs font-medium text-gray-900">LUNA Oversized Shirt - Ivory</h3>
+                    <p class="text-[10px] text-gray-500 mt-0.5">Classic Neutral Tone</p>
+                </div>
+                <div class="flex justify-between items-center mt-4 pt-3 border-t border-gray-100">
+                    <span class="text-xs font-bold text-black font-mono">Rp. 312.999</span>
+                    <button class="border border-black px-3 py-1 text-xs font-mono hover:bg-black hover:text-white transition rounded-full">+ Beli</button>
                 </div>
             </div>
 
-            <!-- Product 2 -->
-            <div class="group bg-white p-4 rounded-xl shadow-sm border border-gray-200">
-                <div class="bg-gray-100 aspect-[3/4] mb-3 overflow-hidden flex items-center justify-center relative rounded-lg">
-                    <span class="text-xs text-gray-500 font-medium">StreetStylez</span>
-                </div>
-                <div class="flex justify-between items-start">
-                    <div>
-                        <h3 class="text-xs font-medium text-gray-900">StreetStylez</h3>
-                        <p class="text-xs text-gray-700 mt-0.5">Rp. 1.500.000</p>
+            <!-- Item 2: LUNA Taupe -->
+            <div class="group bg-white p-4 rounded-xl shadow-sm border border-gray-200 flex flex-col justify-between">
+                <div>
+                    <div class="bg-[#D8CBC4] aspect-[3/4] mb-3 overflow-hidden flex items-center justify-center relative rounded-lg">
+                        <img src="model lunae.png" alt="LUNA Taupe" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 filter brightness-95">
+                        <span class="absolute top-2 left-2 bg-black text-white text-[9px] uppercase px-2 py-0.5 rounded tracking-wider">Special Offer</span>
                     </div>
-                    <button class="border border-black px-2.5 py-1 text-xs font-mono hover:bg-black hover:text-white transition rounded">+</button>
+                    <h3 class="text-xs font-medium text-gray-900">LUNA Oversized Shirt - Taupe</h3>
+                    <p class="text-[10px] text-gray-500 mt-0.5">Earthy Elegant Tone</p>
+                </div>
+                <div class="flex justify-between items-center mt-4 pt-3 border-t border-gray-100">
+                    <span class="text-xs font-bold text-black font-mono">Rp. 312.999</span>
+                    <button class="border border-black px-3 py-1 text-xs font-mono hover:bg-black hover:text-white transition rounded-full">+ Beli</button>
                 </div>
             </div>
 
-            <!-- Product 3 -->
-            <div class="group bg-white p-4 rounded-xl shadow-sm border border-gray-200">
-                <div class="bg-gray-100 aspect-[3/4] mb-3 overflow-hidden flex items-center justify-center relative rounded-lg">
-                    <span class="text-xs text-gray-500 font-medium">ChillWave</span>
-                </div>
-                <div class="flex justify-between items-start">
-                    <div>
-                        <h3 class="text-xs font-medium text-gray-900">ChillWave</h3>
-                        <p class="text-xs text-gray-700 mt-0.5">Rp. 1.500.000</p>
+            <!-- Item 3: LUNA Mocha -->
+            <div class="group bg-white p-4 rounded-xl shadow-sm border border-gray-200 flex flex-col justify-between">
+                <div>
+                    <div class="bg-[#B09886] aspect-[3/4] mb-3 overflow-hidden flex items-center justify-center relative rounded-lg">
+                        <img src="model lunae.png" alt="LUNA Mocha" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 filter brightness-90">
+                        <span class="absolute top-2 left-2 bg-black text-white text-[9px] uppercase px-2 py-0.5 rounded tracking-wider">Special Offer</span>
                     </div>
-                    <button class="border border-black px-2.5 py-1 text-xs font-mono hover:bg-black hover:text-white transition rounded">+</button>
+                    <h3 class="text-xs font-medium text-gray-900">LUNA Oversized Shirt - Mocha</h3>
+                    <p class="text-[10px] text-gray-500 mt-0.5">Warm Rich Tone</p>
+                </div>
+                <div class="flex justify-between items-center mt-4 pt-3 border-t border-gray-100">
+                    <span class="text-xs font-bold text-black font-mono">Rp. 312.999</span>
+                    <button class="border border-black px-3 py-1 text-xs font-mono hover:bg-black hover:text-white transition rounded-full">+ Beli</button>
                 </div>
             </div>
 
-            <!-- Product 4 -->
-            <div class="group bg-white p-4 rounded-xl shadow-sm border border-gray-200">
-                <div class="bg-gray-100 aspect-[3/4] mb-3 overflow-hidden flex items-center justify-center relative rounded-lg">
-                    <span class="text-xs text-gray-500 font-medium">HoodedHaven</span>
-                </div>
-                <div class="flex justify-between items-start">
-                    <div>
-                        <h3 class="text-xs font-medium text-gray-900">HoodedHaven</h3>
-                        <p class="text-xs text-gray-700 mt-0.5">Rp. 1.500.000</p>
+            <!-- Item 4: LUNA Bundle Set -->
+            <div class="group bg-white p-4 rounded-xl shadow-sm border border-gray-200 flex flex-col justify-between">
+                <div>
+                    <div class="bg-[#EAE4DC] aspect-[3/4] mb-3 overflow-hidden flex items-center justify-center relative rounded-lg">
+                        <img src="model lunae.png" alt="LUNA Trio Bundle" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-2 left-2 bg-amber-700 text-white text-[9px] uppercase px-2 py-0.5 rounded tracking-wider">Bundle Promo</span>
                     </div>
-                    <button class="border border-black px-2.5 py-1 text-xs font-mono hover:bg-black hover:text-white transition rounded">+</button>
+                    <h3 class="text-xs font-medium text-gray-900">LUNA Trio Set (Ivory, Taupe, Mocha)</h3>
+                    <p class="text-[10px] text-gray-500 mt-0.5">Complete Modular Wardrobe</p>
+                </div>
+                <div class="flex justify-between items-center mt-4 pt-3 border-t border-gray-100">
+                    <span class="text-xs font-bold text-black font-mono">Rp. 899.000</span>
+                    <button class="border border-black px-3 py-1 text-xs font-mono hover:bg-black hover:text-white transition rounded-full">+ Beli</button>
                 </div>
             </div>
 
