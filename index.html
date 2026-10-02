@@ -19,7 +19,7 @@
         <nav class="flex space-x-6 items-center">
             <a href="#" class="text-gray-600 hover:text-black transition">Shop</a>
             <a href="#" class="font-semibold text-black hover:opacity-70 transition">New In</a>
-            <a href="#" class="text-gray-600 hover:text-black transition">Collections</a>
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition">Collections</a>
             <a href="#" class="text-gray-600 hover:text-black transition">About</a>
             <a href="#" class="text-gray-600 hover:text-black transition">Contact</a>
         </nav>
@@ -37,20 +37,20 @@
         </div>
     </header>
 
-    <!-- Hero Section (Menyatu seperti Gambar 2) -->
+    <!-- Hero Section -->
     <section class="relative w-full pt-12 pb-16 overflow-hidden">
         
-        <!-- Header / Logo & Bulan Sabit di Atas -->
-        <div class="max-w-7xl mx-auto px-8 flex justify-between items-start mb-8">
-            <div>
-                <h1 class="text-4xl md:text-6xl font-serif tracking-wide font-normal flex items-center gap-2">
-                    Lunáe<span class="text-lg">✨</span>
-                </h1>
+        <!-- Header / Logo Teks & Logo Bulan -->
+        <div class="max-w-7xl mx-auto px-8 flex justify-between items-center mb-8">
+            <!-- Logo Teks (logo-teks.png) di Kiri -->
+            <div class="flex flex-col items-start">
+                <img src="logo-teks.png" alt="Logo Lunáe" class="h-10 md:h-14 object-contain">
                 <p class="text-[10px] tracking-[0.3em] uppercase text-gray-600 mt-1">Modular Wear</p>
             </div>
-            <!-- Ikon Bulan Sabit Estetik di Kanan Atas Banner -->
-            <div class="w-16 h-16 rounded-full bg-black text-white flex items-center justify-center text-2xl shadow-lg">
-                🌙✨
+
+            <!-- Logo Bulan (logo-bulan.png) di Kanan -->
+            <div class="w-16 h-16 rounded-full overflow-hidden bg-black shadow-lg flex items-center justify-center border border-gray-300">
+                <img src="logo-bulan.png" alt="Logo Bulan" class="w-full h-full object-cover">
             </div>
         </div>
 
@@ -76,7 +76,6 @@
 
             <!-- Tengah: Foto Model (hero-model.jpg) -->
             <div class="absolute inset-0 flex items-center justify-center pointer-events-none z-0">
-                <!-- Pastikan nama file gambar di GitHub disesuaikan. Jika namanya hero-model.jpg.jpg, ganti src di bawah sesuai nama aslinya -->
                 <img src="hero-model.jpg" alt="Lunáe Model" class="h-full max-h-[500px] object-cover pointer-events-auto">
             </div>
 
@@ -154,7 +153,7 @@
 
             <!-- Product 4 -->
             <div class="group bg-white p-4 rounded-xl shadow-sm border border-gray-200">
-                <div class="bg-[#E5E5E5] aspect-[3/4] aspect-[3/4] mb-3 overflow-hidden flex items-center justify-center relative rounded-lg">
+                <div class="bg-[#E5E5E5] aspect-[3/4] mb-3 overflow-hidden flex items-center justify-center relative rounded-lg">
                     <span class="text-xs text-gray-500 font-medium">HoodedHaven Image</span>
                 </div>
                 <div class="flex justify-between items-start">
