@@ -4,18 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lunáe – Modular Wear</title>
-    <!-- Menggunakan Tailwind CSS CDN v3 yang lebih stabil -->
+    <!-- Menggunakan Tailwind CSS CDN v3 -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Plus Jakarta Sans', sans-serif; }
-        /* Menggunakan mix-blend-mode untuk menghilangkan latar belakang putih secara otomatis */
         .blend-bg-white {
             mix-blend-mode: multiply;
         }
     </style>
 </head>
-<body class="bg-[#F4F1EA] text-[#1A1A1A] antialiased">
+<body class="bg-[#F4F1EA] text-[#1A1A1A] antialiased overflow-x-hidden">
 
     <!-- Top Navigation Bar -->
     <header class="w-full border-b border-gray-300 py-4 px-8 flex justify-between items-center text-xs tracking-wide bg-[#F4F1EA]">
@@ -41,28 +40,28 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="relative w-full pt-10 pb-16 overflow-visible">
+    <!-- Hero Section (Locked Layout & Larger Branding) -->
+    <section class="relative w-full pt-6 pb-16">
         
-        <!-- Header / Logo Teks & Logo Bulan yang Dibuat Lebih Besar Maksimal -->
-        <div class="max-w-7xl mx-auto px-8 flex justify-between items-center mb-6">
+        <!-- Header / Logo Teks & Logo Bulan (Diperbesar & Sejajar) -->
+        <div class="max-w-7xl mx-auto px-8 flex justify-between items-center mb-2">
             <!-- Logo Teks (logo-teks.png) -->
             <div class="flex flex-col items-start">
-                <img src="logo-teks.png" alt="Logo Lunáe" class="h-44 md:h-64 w-auto object-contain blend-bg-white -ml-2">
+                <img src="logo-teks.png" alt="Logo Lunáe" class="h-56 md:h-72 w-auto object-contain blend-bg-white -ml-4">
             </div>
 
             <!-- Logo Bulan (logo-bulan.png) -->
-            <div class="w-48 h-48 md:w-64 md:h-64 flex items-center justify-center">
+            <div class="w-52 h-52 md:w-72 md:h-72 flex items-center justify-center">
                 <img src="logo-bulan.png" alt="Logo Bulan" class="w-full h-full object-contain blend-bg-white">
             </div>
         </div>
 
-        <!-- Bagian Tengah: Banner Hitam Melintang dengan Model Transparan & Besar -->
-        <div class="relative w-full bg-[#1A1A1A] text-white py-12 px-4 md:px-12 flex flex-col lg:flex-row items-center justify-between min-h-[460px]">
+        <!-- Bagian Tengah: Banner Hitam Melintang & Terkunci (Locked Horizontal) -->
+        <div class="relative w-full bg-[#1A1A1A] text-white py-14 px-8 md:px-16 flex flex-row items-center justify-between min-h-[500px]">
             
             <!-- Kiri: Teks Slogan -->
-            <div class="z-20 max-w-md space-y-4 text-left lg:w-1/3">
-                <h2 class="text-2xl md:text-3xl font-serif leading-snug">
+            <div class="z-20 max-w-sm space-y-4 text-left w-1/3">
+                <h2 class="text-3xl md:text-4xl font-serif leading-tight">
                     Where Comfort <br>Meets Confidence
                 </h2>
                 <p class="text-xs text-gray-300 leading-relaxed">
@@ -77,20 +76,20 @@
                 </div>
             </div>
 
-            <!-- Tengah: Foto Model (model lunae.png) Lebih Besar, Transparan, & Melayang -->
+            <!-- Tengah: Foto Model (model lunae.png) Menembus Atas & Bawah secara Presisi -->
             <div class="absolute inset-x-0 bottom-0 flex justify-center pointer-events-none z-10">
-                <img src="model lunae.png" alt="Lunáe Model" class="h-[580px] md:h-[680px] object-contain pointer-events-auto blend-bg-white transform translate-y-[-60px]">
+                <img src="model lunae.png" alt="Lunáe Model" class="h-[640px] md:h-[720px] object-contain pointer-events-auto transform translate-y-[-80px]">
             </div>
 
             <!-- Kanan: Floating Card (Signature Trio Set) -->
-            <div class="z-20 bg-[#F4F1EA] text-[#1A1A1A] p-4 rounded-2xl shadow-2xl w-72 mt-8 lg:mt-0 lg:w-80 border border-gray-300">
+            <div class="z-20 bg-[#F4F1EA] text-[#1A1A1A] p-4 rounded-2xl shadow-2xl w-80 border border-gray-300">
                 <div class="bg-white p-3 rounded-xl mb-3 shadow-inner">
                     <div class="grid grid-cols-2 gap-2 mb-2">
                         <div class="bg-gray-100 aspect-[4/3] rounded overflow-hidden flex items-center justify-center">
-                            <img src="model lunae.png" alt="Detail 1" class="w-full h-full object-cover blend-bg-white">
+                            <img src="model lunae.png" alt="Detail 1" class="w-full h-full object-cover">
                         </div>
                         <div class="bg-gray-100 aspect-[4/3] rounded overflow-hidden flex items-center justify-center">
-                            <img src="model lunae.png" alt="Detail 2" class="w-full h-full object-cover blend-bg-white">
+                            <img src="model lunae.png" alt="Detail 2" class="w-full h-full object-cover">
                         </div>
                     </div>
                 </div>
@@ -105,7 +104,7 @@
     </section>
 
     <!-- Main Content Container / Product Grid -->
-    <main id="products" class="max-w-7xl mx-auto px-8 pt-32 pb-20">
+    <main id="products" class="max-w-7xl mx-auto px-8 pt-36 pb-20">
         
         <!-- Section Title -->
         <div class="mb-8 border-t border-gray-300 pt-8">
